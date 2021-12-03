@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common FluidOS stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+EXTENDED_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
