@@ -608,7 +608,7 @@
 
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when
          user switches -->
-    <bool name="config_cleanupUnusedFingerprints">false</bool>
+    <bool name="config_cleanupUnusedFingerprints">true</bool>
 
     <!-- Whether to post reset runnable for all clients. Needed for some older
          vendor fingerprint HAL implementations. -->
@@ -681,5 +681,11 @@
 
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
+
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
+    <!-- We dont not have a multicolored LED -->
+    <bool name="config_multiColorBatteryLed">true</bool>
 
 </resources>
