@@ -110,6 +110,13 @@ ro.surface_flinger.set_touch_timer_ms=5000
 ro.surface_flinger.set_idle_timer_ms=9000
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
+# Power Save
+ro.vendor.use_data_netmgrd=true 
+ro.vold.umsdirtyratio=20 
+ro.ril.disable.power.collapse=0 
+power.saving.mode=1 
+pm.sleep_mode=1
+
 # Time
 persist.timed.enable=true
 
