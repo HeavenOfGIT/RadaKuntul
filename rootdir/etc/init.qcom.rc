@@ -86,9 +86,6 @@ on late-fs
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
-    # mount RW partitions which need run fsck
-    mount_all /vendor/etc/fstab.qcom --late
-
 on early-boot
     # Wait for devices
     wait_for_prop vendor.all.devices.ready 1
@@ -331,9 +328,6 @@ on property:sys.boot_completed=1
     write /sys/block/sda/queue/read_ahead_kb 512
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
-    # Restrict permissions to socket file 
-    # to hide Magisk & co.
-    chmod 440 /proc/net/unix
 
     #Starting perf properly
     setprop vendor.post_boot.parsed 1
