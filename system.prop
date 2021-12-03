@@ -62,6 +62,9 @@ persist.qfp=false
 # FM
 hw.fm.init=0
 
+# Gestures
+qemu.hw.mainkeys=0
+
 # IORAP
 persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 
