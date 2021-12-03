@@ -107,6 +107,8 @@ ro.audio.soundfx.dirac=true
 persist.audio.dirac.speaker=true
 
 # Display
+debug.cpurend.vsync=false
+debug.sf.latch_unsignaled=1
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 ro.opengles.version=196610
