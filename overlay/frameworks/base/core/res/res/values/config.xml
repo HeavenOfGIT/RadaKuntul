@@ -688,4 +688,7 @@
     <!-- We dont not have a multicolored LED -->
     <bool name="config_multiColorBatteryLed">true</bool>
 
+    <!-- Whether to show a preference item for mobile plan -->
+    <bool name="config_show_mobile_plan">true</bool>
+
 </resources>
