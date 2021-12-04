@@ -518,3 +518,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Enable gestural navigation overlay to match default navigation mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# Lawnchair And QuickSwitch
+PRODUCT_PACKAGES += \
+    Launcher
