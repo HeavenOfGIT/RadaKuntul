@@ -19,9 +19,18 @@
 <resources>
 
     <!-- Set the automatic brightness mode on by default -->
-    <bool name="def_screen_brightness_automatic_mode">true</bool>
+    <bool name="def_screen_brightness_automatic_mode">false</bool>
 
     <!-- Disable bluetooth by default -->
     <bool name="def_bluetooth_on">true</bool>
+
+    <!-- Disable UI touch sounds by default -->
+    <bool name="def_sound_effects_enabled">false</bool>
+
+    <!-- Default screen brightness, from 0 to 255. 78 is 30%. -->
+    <integer name="def_screen_brightness">50</integer>
+
+    <!-- 30 seconds for default screen timeout -->
+    <integer name="def_screen_off_timeout">60000</integer>
 
 </resources>
