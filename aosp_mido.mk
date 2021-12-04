@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 $(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_BLUR := true
+TARGET_USES_BLUR := true
 EXTENDED_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions
