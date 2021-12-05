@@ -409,8 +409,8 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
 
 on charger
     # Notification LED
-    chown system system /sys/class/leds/red/brightness
-    write /sys/class/leds/red/brightness 255
+    chown system system /sys/class/leds/green/brightness
+    write /sys/class/leds/green/brightness 255
 
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
