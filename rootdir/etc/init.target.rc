@@ -165,7 +165,9 @@ on charger
     start thermal-engine
 
 on boot
-    chown system system /sys/kernel/hbtp/display_pwr
+# set default schedTune value for camera-daemon
+    write /dev/stune/camera-daemon/schedtune.prefer_idle 1
+    write /dev/stune/camera-daemon/schedtune.boost 0
 
 # Flashlight
     chown root system /sys/class/leds/led:torch_1/max_brightness
