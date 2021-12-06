@@ -750,4 +750,7 @@
     <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
     <bool name="config_defaultRingtonePickerEnabled">true</bool>
 
+    <!-- Whether to display spectrum settings -->
+    <bool name="device_supports_spectrum">true</bool>
+
 </resources>
