@@ -16,7 +16,6 @@ import org.lineageos.settings.preferences.SecureSettingListPreference;
 import org.lineageos.settings.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.preferences.VibrationSeekBarPreference;
 import org.lineageos.settings.preferences.CustomSeekBarPreference;
-import android.util.Log;
 
 import org.lineageos.settings.R;
 
@@ -118,5 +117,4 @@ public class DeviceSettings extends PreferenceFragment implements
                 }
                 break;
         }
-        return true;
     }
