@@ -79,6 +79,19 @@
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Dirac sound</string>
 
+    <!-- USB fastcharge -->
+    <string name="fastcharge_title">Enable USB Fastcharge</string>
+    <string name="fastcharge_summary">Charge upto 700mA when connected to a computer via USB 3.0 port</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">FPS Info Overlay</string>
+    <string name="fps_info_summary">Show overlay with current frames per second</string>
+
+    <!-- Touchboost -->
+    <string name="boost_title">Boost</string>
+    <string name="touchboost_title">Enable Touchboost</string>
+    <string name="touchboost_summary">Boost CPU when touch detected for smooth experience</string>
+
     <!-- Vibrator -->
     <string name="vibration_category">Vibration</string>
     <string name="vibration_summary">Ajust vibration strenght</string>
