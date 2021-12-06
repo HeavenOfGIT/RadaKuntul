@@ -180,6 +180,9 @@ debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
 persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
 
+# Spectrum
+spectrum.support=1
+
 # System
 persist.sys.binary_xml=false
 
