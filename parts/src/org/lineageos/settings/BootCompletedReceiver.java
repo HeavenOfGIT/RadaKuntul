@@ -93,5 +93,10 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
                 context.getContentResolver(), VibrationSettings.PREF_VIBRATION_NOTIFICATION_STRENGTH, 80) / 100.0 * (VibrationSettings.MAX_VIBRATION - VibrationSettings.MIN_VIBRATION) + VibrationSettings.MIN_VIBRATION);
         VibrationUtils.setValue(VibrationSettings.VIBRATION_CALL_PATH, Settings.Secure.getInt(
                 context.getContentResolver(), VibrationSettings.PREF_VIBRATION_CALL_STRENGTH, 80) / 100.0 * (VibrationSettings.MAX_VIBRATION - VibrationSettings.MIN_VIBRATION) + VibrationSettings.MIN_VIBRATION);
+
+        //TouchBoost
+        FileUtils.setValue(DeviceSettings.MSM_TOUCHBOOST_PATH, Settings.Secure.getInt(context.getContentResolver(),
+                DeviceSettings.PREF_MSM_TOUCHBOOST, 0));
+
     }
 }
