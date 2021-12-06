@@ -120,5 +120,3 @@ public class DeviceSettings extends PreferenceFragment implements
         }
         return true;
     }
-   }
-}
