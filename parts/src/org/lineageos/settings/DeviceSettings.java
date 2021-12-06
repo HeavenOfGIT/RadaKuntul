@@ -56,11 +56,7 @@ public class DeviceSettings extends PreferenceFragment implements
         vib.setEnabled(Vibration.isSupported());
         vib.setChecked(Vibration.isCurrentlyEnabled(this.getContext()));
         vib.setOnPreferenceChangeListener(new Vibration(getContext()));
-        Preference ambientDisplay = findPreference(AMBIENT_DISPLAY);
-        ambientDisplay.setOnPreferenceClickListener(preference -> {
-            Intent intent = new Intent(getContext(), AmbientGesturePreferenceActivity.class);
-            startActivity(intent);
-            return true;
+   
         });
         VibrationSeekBarPreference vibrationSystemStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_SYSTEM_STRENGTH);
         vibrationSystemStrength.setEnabled(FileUtils.fileWritable(VIBRATION_SYSTEM_PATH));
