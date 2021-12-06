@@ -27,6 +27,7 @@ import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.preferences.FileUtils;
 import org.lineageos.settings.soundcontrol.SoundControlSettings;
+import org.lineageos.settings.fps.FPSInfoService;
 import org.lineageos.settings.vibration.VibrationSettings;
 import org.lineageos.settings.vibration.VibrationUtils;
 import org.lineageos.settings.torch.TorchSettings;
