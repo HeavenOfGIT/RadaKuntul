@@ -158,4 +158,4 @@ persist.device.config.runtime_native.uasp_pool_enabled=true
 #GBoard
 ro.com.google.ime.kb_pad_port_b=1
 
-ro.cherish.maintainer=AswLueEmang
+ro.cherish.maintainer=RasyidAlKautsar
