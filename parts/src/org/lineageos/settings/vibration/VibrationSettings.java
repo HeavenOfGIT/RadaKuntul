@@ -15,7 +15,7 @@ import org.lineageos.settings.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.vibration.VibrationUtils;
 import android.util.Log;
 
-import org.lineageos.settings.BootCompletedReceiver;
+import org.lineageos.settings.R;
 
 public class VibrationSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -41,7 +41,7 @@ public class VibrationSettings extends PreferenceFragment implements
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(BootCompletedReceiver.xml.vibration, rootKey);
+        setPreferencesFromResource(R.xml.vibration, rootKey);
         mContext = this.getContext();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
 
