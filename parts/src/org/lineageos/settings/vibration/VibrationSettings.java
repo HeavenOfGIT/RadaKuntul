@@ -41,7 +41,7 @@ public class VibrationSettings extends PreferenceFragment implements
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(R.xml.vibration, rootKey);
+        setPreferencesFromResource(BootCompletedReceiver.xml.vibration, rootKey);
         mContext = this.getContext();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
 
