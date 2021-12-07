@@ -15,7 +15,7 @@ import org.lineageos.settings.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.vibration.VibrationUtils;
 import android.util.Log;
 
-import com.xiaomi.parts.BootCompletedReceiver;
+import org.lineageos.settings.BootCompletedReceiver;
 
 public class VibrationSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
