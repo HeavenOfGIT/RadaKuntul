@@ -24,7 +24,10 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common Extended stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-AOSP_BUILD_TYPE := Unofficial
+
+# Extended Versioning
+EXTENDED_VERSION = v9.0
+EXTENDED_BUILD_TYPE := EOL
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
