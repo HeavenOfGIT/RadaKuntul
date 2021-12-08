@@ -27,8 +27,6 @@ import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.preferences.FileUtils;
 import org.lineageos.settings.soundcontrol.SoundControlSettings;
-import org.lineageos.settings.vibration.VibrationSettings;
-import org.lineageos.settings.vibration.VibrationUtils;
 import org.lineageos.settings.torch.TorchSettings;
 
 public class BootCompletedReceiver extends BroadcastReceiver implements Controller {
@@ -83,15 +81,5 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
             FileUtils.setValue(KCAL_HUE, Settings.Secure.getInt(context.getContentResolver(),
                     PREF_HUE, HUE_DEFAULT));
         }
-
-        //Vibration
-	VibrationUtils.setValue(VibrationSettings.PREF_VIBRATION_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                VibrationSettings.PREF_VIBRATION_OVERRIDE, 0));
-	VibrationUtils.setValue(VibrationSettings.VIBRATION_SYSTEM_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), VibrationSettings.PREF_VIBRATION_SYSTEM_STRENGTH, 80) / 100.0 * (VibrationSettings.MAX_VIBRATION - VibrationSettings.MIN_VIBRATION) + VibrationSettings.MIN_VIBRATION);
-	VibrationUtils.setValue(VibrationSettings.VIBRATION_NOTIFICATION_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), VibrationSettings.PREF_VIBRATION_NOTIFICATION_STRENGTH, 80) / 100.0 * (VibrationSettings.MAX_VIBRATION - VibrationSettings.MIN_VIBRATION) + VibrationSettings.MIN_VIBRATION);
-        VibrationUtils.setValue(VibrationSettings.VIBRATION_CALL_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), VibrationSettings.PREF_VIBRATION_CALL_STRENGTH, 80) / 100.0 * (VibrationSettings.MAX_VIBRATION - VibrationSettings.MIN_VIBRATION) + VibrationSettings.MIN_VIBRATION);
     }
 }
