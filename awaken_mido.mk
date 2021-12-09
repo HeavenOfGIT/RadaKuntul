@@ -20,6 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 # Inherit some common Awaken stuff
 $(call inherit-product, vendor/awaken/config/common_full_phone.mk)
