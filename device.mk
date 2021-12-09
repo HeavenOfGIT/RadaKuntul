@@ -250,6 +250,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
+# HALS
+SRC_AUDIO_HAL_DIR := $(LOCAL_PATH)/qcom-caf/audio 
+SRC_DISPLAY_HAL_DIR := $(LOCAL_PATH)/qcom-caf/display 
+SRC_MEDIA_HAL_DIR := $(LOCAL_PATH)/qcom-caf/media
+
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl:64 \
