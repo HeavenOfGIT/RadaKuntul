@@ -41,9 +41,6 @@ BOARD_USES_ADRENO := true
 QCOM_HARDWARE_VARIANT := msm8996
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-    
-QCOM_SOONG_NAMESPACE := \
-    hardware/qcom-caf/msm8996
 
 # Permissions
 PRODUCT_COPY_FILES += \
