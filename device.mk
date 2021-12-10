@@ -177,8 +177,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi_mido
 
-$(call inherit-product, hardware/qcom-caf/msm8996/display/display-commonsys-intf/config/display-interfaces-product.mk)
-$(call inherit-product, hardware/qcom-caf/msm8996/display/display-commonsys-intf/config/display-product-system.mk)
+$(call inherit-product, hardware/qcom-caf/msm8996-r/display/display-commonsys-intf/config/display-interfaces-product.mk)
+$(call inherit-product, hardware/qcom-caf/msm8996-r/display/display-commonsys-intf/config/display-product-system.mk)
 
 # Display
 PRODUCT_PACKAGES += \
@@ -243,11 +243,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
-
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio 
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display 
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
 
 # Healthd
 PRODUCT_PACKAGES += \
