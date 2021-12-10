@@ -208,6 +208,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery.qcom
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_USES_OLD_MNC_FORMAT := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
