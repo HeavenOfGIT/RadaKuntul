@@ -531,4 +531,4 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/device_features/mido.xml:system/etc/device_features/mido.xml
+    $(LOCAL_PATH)/system/etc/device_features/mido.xml:system/etc/device_features/mido.xml
