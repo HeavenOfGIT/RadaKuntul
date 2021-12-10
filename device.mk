@@ -529,6 +529,3 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     Settings \
     SystemUI
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/etc/device_features/mido.xml:system/etc/device_features/mido.xml
