@@ -177,13 +177,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi_mido
 
-$(call inherit-product, hardware/qcom-caf/msm8996-r/display/display-commonsys-intf/config/display-interfaces-product.mk)
-$(call inherit-product, hardware/qcom-caf/msm8996-r/display/display-commonsys-intf/config/display-product-system.mk)
-
 # Display
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.graphics.composer@2.1-service \
@@ -193,12 +191,14 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
+    libdisplayconfig.qti \
     libqdMetaData \
     libsdmutils \
     libsdmutils.vendor \
     libtinyxml \
     libtinyxml.vendor \
     libvulkan \
+    vendor.display.config@1.0.vendor \
     vendor.display.config@2.0
 
 # Device-specific settings
