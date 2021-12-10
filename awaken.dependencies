@@ -1,0 +1,32 @@
+[
+  {
+   "repository":  "RasyidAlKautsar/kernel_xiaomi_mido",
+   "target_path": "kernel/xiaomi/mido",
+   "branch":      "patch-1",
+   "remote":      "github"
+  },
+  {
+    "repository":  "Redmi-note-4x/proprietary_vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch":      "aex-12",
+    "remote":      "github"
+  },
+  {
+    "repository":  "Redmi-note-4x/android_hardware_qcom_display",
+    "target_path": "hardware/qcom-caf/msm8996/display",
+    "branch":      "msm8996-10.6.2.r1",
+    "remote":      "github"
+  },
+  {
+    "repository":  "Redmi-note-4x/android_hardware_qcom_media",
+    "target_path": "hardware/qcom-caf/msm8996/media",
+    "branch":      "msm8996-9.6.3.r1",
+    "remote":      "github"
+  },
+  {
+    "repository":  "Redmi-note-4x/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom-caf/msm8996/audio",
+    "branch":      "msm8996-s",
+    "remote":      "github"
+  }
+]
