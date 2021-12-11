@@ -227,9 +227,6 @@ on boot
     chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
     chmod 0666 /sys/devices/virtual/graphics/fb0/measured_fps
 
-# Thermal Profile
-    write /sys/devices/virtual/thermal/cdev-by-name/thermal-cpufreq-0/cur_state 0
-
 # Logcat Services
 on fs
     rm /cache/boot_lc_main.txt
