@@ -25,7 +25,6 @@ import android.provider.Settings;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
-import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.preferences.FileUtils;
 import org.lineageos.settings.soundcontrol.SoundControlSettings;
 import org.lineageos.settings.torch.TorchSettings;
@@ -40,7 +39,6 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
         if (DozeUtils.isDozeEnabled(context) && DozeUtils.sensorsEnabled(context)) {
             if (DEBUG) Log.d(TAG, "Starting Doze service");
             DozeUtils.startService(context);
-            ThermalUtils.startService(context);
         }
         new DiracUtils(context).onBootCompleted();
 
